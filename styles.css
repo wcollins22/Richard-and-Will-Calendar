@@ -156,3 +156,9 @@ body {
 #clock {
   color: white;
 }
+
+#All {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+}

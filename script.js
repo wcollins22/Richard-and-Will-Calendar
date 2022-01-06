@@ -35,7 +35,7 @@ function load() {
 	  var city = document.getElementById('city');
 	  var temp = document.getElementById('temp')
 	  city.innerText = `City: \n${data.name}`;
-	  temp.innerText = `Current Temperature: \n${Math.round(data.main.temp)}`;
+	  temp.innerText = `Current Temperature: \n${Math.round(data.main.temp)}°F`;
 
   })
   

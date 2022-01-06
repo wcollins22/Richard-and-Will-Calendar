@@ -145,3 +145,7 @@ body {
 #weather p {
   padding: 1em;
 }
+
+#clock {
+  color: white;
+}

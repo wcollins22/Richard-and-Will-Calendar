@@ -134,3 +134,12 @@ body {
     position: absolute;
     background-color: rgba(0,0,0,0.8);
   }
+
+#weather {
+  background-color: black;
+  color:  white;
+  padding: 1em;
+}
+#weather p {
+  padding: 1em;
+}

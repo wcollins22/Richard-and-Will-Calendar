@@ -28,7 +28,16 @@ function openModal(date) {
 function load() {
   document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?landscape')"
 
-  
+  fetch('https://api.openweathermap.org/data/2.5/weather?q=Water+Valley&units=imperial&appid=7478d475030acf9b38bb829cba45b7b5').then(response => {
+	  return response.json();
+  }).then(data => {
+	  console.log(data)
+	  var city = document.getElementById('city');
+	  var temp = document.getElementById('temp')
+	  city.innerText = `City: ${data.name}`;
+	  temp.innerText = `Current Temperature: ${Math.round(data.main.temp)}`;
+
+  })
   
   const dt = new Date();
 

@@ -138,7 +138,9 @@ body {
 #weather {
   background-color: black;
   color:  white;
-  padding: 1em;
+  margin-left: -20%;
+  margin-right: 10%;
+  height: fit-content;
 }
 #weather p {
   padding: 1em;

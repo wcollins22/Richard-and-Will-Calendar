@@ -33,9 +33,13 @@ function load() {
   }).then(data => {
 	  console.log(data)
 	  var city = document.getElementById('city');
-	  var temp = document.getElementById('temp')
+	  var temp = document.getElementById('temp');
+    var humidity = document.getElementById('humid');
+    var windSpeed = document.getElementById('windSpeed');
 	  city.innerText = `City: \n${data.name}`;
 	  temp.innerText = `Current Temperature: \n${Math.round(data.main.temp)}°F`;
+    humidity.innerText = `Humidity: \n${data.main.humidity}%`;
+    windSpeed.innerText = `Wind Speed: \n${Math.round(data.wind.speed)}mph`
 
   })
   

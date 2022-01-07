@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Kosugi+Maru&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orelega+One&display=swap');
 
 body {
   display: flex;
@@ -32,7 +34,7 @@ button {
   color: steelblue;
 }
 #header #monthDisplay {
-  font-family: "Kosugi Maru";
+  font-family: "Orelega One";
   text-align: center;
   border-style: solid;
   border-color: rgba(255, 255, 255, 0.589);
@@ -40,7 +42,7 @@ button {
   background-color: rgba(0, 0, 0, 0.527);
   font-size: 3em;
   -webkit-text-stroke-color: white;
-  -webkit-text-stroke-width: 0.75px;
+  -webkit-text-stroke-width: 1px;
 }
 #container {
   width: 770px;
@@ -96,7 +98,7 @@ button {
 .event {
   font-size: 10px;
   padding: 3px;
-  background-color: #58bae4;
+  background-color: rgba(0, 0, 0, 0.521);
   color: white;
   border-radius: 5px;
   max-height: 55px;
@@ -109,17 +111,23 @@ button {
 }
 #newEventModal,
 #deleteEventModal {
+  text-align: center;
+  font-size: 25px;
+  -webkit-text-stroke-color: white;
+  -webkit-text-stroke-width: .50px;
   display: none;
   z-index: 20;
   padding: 25px;
-  background-color: #e8f4fa;
+  background-color: #5395b6;
+  border-style: solid;
+  border-color: rgb(140, 194, 211);
   box-shadow: 0px 0px 3px black;
   border-radius: 5px;
   width: 350px;
   top: 100px;
   left: calc(50% - 175px);
   position: absolute;
-  font-family: sans-serif;
+  font-family: 'Be Vietnam Pro';
 }
 #eventTitleInput {
   padding: 10px;
@@ -136,41 +144,66 @@ button {
 }
 #cancelButton,
 #deleteButton {
-  background-color: #d36c6c;
+  background-color: #b41c1c;
+  margin: 0;
 }
 #saveButton,
 #closeButton {
-  background-color: #92a1d1;
+  background-color: #1f45c0;
+  margin: 0
 }
 #eventText {
-  font-size: 14px;
+  -webkit-text-stroke-width: .70px;
+  font-size: 30px;
+  font-family: 'Orelega One';
+  background-color: rgba(255, 255, 255, 0.527);
+  border-radius: 10px;
 }
 #modalBackDrop {
   display: none;
   top: 0px;
   left: 0px;
   z-index: 10;
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 132.5%;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.8);
+  background-size: cover;
 }
 
 #weather {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: rgba(0, 0, 0, 0.74);
   border-style: solid;
   border-width: 1.5px;
-  border-color: rgba(255, 255, 255, 0.507);
-  margin-left: -38%;
+  border-color: rgba(255, 255, 255, 0.747);
   color: white;
-  width: 15em;
-  height: 52.5em;
-  position: absolute;
+  margin-top: 7%;
+  margin-right: 10%;
+  width: 25em;
+  height: fit-content;
+  float: left;
 }
 #weather p {
   padding: 1em;
 }
 
 #clock {
+  text-align: center;
   color: white;
+  font-size: 40px;
 }
+
+#Weather-Text {
+  font-family: 'Kosugi Maru';
+  font-size: 18px;
+}
+
+.EventButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+

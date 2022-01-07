@@ -9,11 +9,13 @@
   </head>
   <body>
     <div id="weather">
+      <p id="clock" onload="currentTime()"></p>
+      <div id="Weather-Text">
       <p id="city">City:</p>
       <p id="temp"></p>
       <p id="humid"></p>
       <p id="windSpeed"></p>
-      <p id="clock" onload="currentTime()"></p>
+     </div>
     </div>
 
     <div id="container">
@@ -43,9 +45,10 @@
       <h2>New Event</h2>
 
       <input id="eventTitleInput" placeholder="Event Title" />
-
+      <div class="EventButtons">
       <button id="saveButton">Save</button>
       <button id="cancelButton">Cancel</button>
+      </div>
     </div>
 
     <div id="deleteEventModal">
@@ -53,8 +56,10 @@
 
       <p id="eventText"></p>
 
+      <div class="EventButtons">
       <button id="deleteButton">Delete</button>
       <button id="closeButton">Close</button>
+      </div>
     </div>
 
     <div id="modalBackDrop"></div>

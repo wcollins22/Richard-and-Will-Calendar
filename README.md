@@ -1,7 +1,7 @@
 # Unit-Project-6
 
 ## What Is This?
-We made a calendar that allows you to schedule events and even get the weather forecast. Our main inspiration was making something you could use and something professional.
+We made a calendar that allows you to schedule events and even get the current weather forecast. Our main inspiration was making something you could use and something professional.
 
 ## What Did We Use?
 We used the built-in Javascript date api. It offered the ability to get the current date and also calculate the upcoming dates. 

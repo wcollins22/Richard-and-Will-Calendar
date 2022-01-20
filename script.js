@@ -26,7 +26,7 @@ function openModal(date) {
 }
 
 function load() {
-  document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?location[NewYork]')"
+  document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?Tokyo')"
 
   fetch('https://api.openweathermap.org/data/2.5/weather?q=Water+Valley&units=imperial&appid=7478d475030acf9b38bb829cba45b7b5').then(response => {
 	  return response.json();
